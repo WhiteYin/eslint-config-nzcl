@@ -10,7 +10,7 @@ module.exports = {
         "no-compare-neg-zero": "error",
         //禁止在比较表达式中出现赋值操作符
         "no-cond-assign": "error",
-        //禁止除console.error和console.warn以外的语句
+        //禁止除console.error和console.warn以外的console语句
         "no-console": ["error", {
             "allow":["warn","error"]
         }],
@@ -46,5 +46,21 @@ module.exports = {
         "no-regex-spaces": "error",
         //对稀疏数组发出警告，如"[1,2,,3,,4]"。这可能是开发者多写了逗号。
         "no-sparse-arrays": "warning",
+        //对可能是错误的模板字符串发出警告。比如"${abc}"可能是误写。
+        "no-template-curly-in-string": "warning",
+        //禁止在必要的换行时省略分号
+        "no-unexpected-multiline": "error",
+        //禁止在return等返回语句后出现不可达代码
+        "no-unreachable": "error",
+        //由于finally中的返回值会比try语句块的返回值返回得要早，
+        //所以为了保证正确接收到try的返回值，
+        //禁止在finally块中出现return等返回语句
+        "no-unsafe-finally": "error",
+        //对可能是错误的布尔表达式发出警告。比如"!(key in obj)"错写成"!key in obj"
+        "no-unsafe-negation": "warning",
+        //禁止直接与NaN进行比较，应该使用Number.isNaN()
+        "use-isnan": "error",
+        //禁止将typeof操作符返回的结果与未知的类型比较
+        "valid-typeof":"error"
     }
 };
