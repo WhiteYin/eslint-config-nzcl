@@ -1,0 +1,28 @@
+{
+  "name": "eslint-config-nzcl",
+  "version": "1.0.0",
+  "description": "nzcl社团eslint配置规范",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WhiteYin/eslint-config-nzcl.git"
+  },
+  "keywords": [
+    "nzcl",
+    "eslint",
+    "eslintconfig",
+    "code style"
+  ],
+  "author": "WhiteYin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WhiteYin/eslint-config-nzcl/issues"
+  },
+  "homepage": "https://github.com/WhiteYin/eslint-config-nzcl#readme",
+  "peerDependencies": {
+    "eslint": ">=4.1.1"
+  }
+}
