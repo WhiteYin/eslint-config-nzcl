@@ -119,7 +119,6 @@ module.exports = {
         //禁止省略parseInt的第二个参数
         "radix": "error",
         //禁止出现async函数中没有await的情况
-        "require-await": "error",
-        //
+        "require-await": "error"
     }
 };
