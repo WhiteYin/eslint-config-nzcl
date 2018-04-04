@@ -61,6 +61,65 @@ module.exports = {
         //禁止直接与NaN进行比较，应该使用Number.isNaN()
         "use-isnan": "error",
         //禁止将typeof操作符返回的结果与未知的类型比较
-        "valid-typeof":"error"
+        "valid-typeof": "error",
+        //禁止Array原型方法的回调函数缺少return返回值
+        "array-callback-return": "error",
+        //禁止出现跨块级调用变量
+        "block-scoped-var": "error",
+        //对缺少大括号的语句发出警告
+        "curly": "warning",
+        //禁止switch语句中缺少default分支
+        "default-case": "error",
+        //禁止使用==和!=
+        "eqeqeq": "error",
+        //对缺少if(obj.hasOwnProperty())判断的for...in循环发出警告
+        "guard-for-in": "waring",
+        //禁止使用eval()
+        "no-eval": "error",
+        //禁止扩展原生类型
+        "no-extend-native": "error",
+        //对没有break的case语句发出警告
+        "no-fallthrough": "warning",
+        //禁止对原生全局变量赋值
+        "no-global-assign": "error",
+        //禁止使用隐式eval()
+        "no-implied-eval": "error",
+        //禁止在对象外出现this
+        "no-invalid-this": "error",
+        //禁止使用__iterator__属性
+        "no-iterator": "error",
+        //禁止在循环中出现函数声明
+        "no-loop-func": "error",
+        //禁止出现重复使用的数字，应该用一个常量代替
+        "no-magic-numbers": "error",
+        //禁止出现换行符"\"
+        "no-multi-str": "error",
+        //禁止出现不使用变量接收new操作符返回值的情况
+        "no-new": "error",
+        //禁止对函数的参数进行赋值，保证纯函数，无副作用
+        "no-param-reassign": "error",
+        //禁止使用__proto__属性
+        "no-proto": "error",
+        //禁止使用var重复声明同名变量
+        "no-redeclare": "error",
+        //禁止使用javascript:url格式，避免出现eval()类似的问题
+        "no-script-url": "error",
+        //禁止出现自我赋值的情况
+        "no-self-assign": "error",
+        //禁止抛出除Error对象外的值
+        "no-throw-literal": "error",
+        //禁用未使用过的标签
+        "no-unused-labels": "error",
+        //禁止不必要的转义
+        "no-useless-escape": "error",
+        //禁用 with 语句
+        "no-with": "error",
+        //禁止Promise.reject使用非Error对象的参数
+        "prefer-promise-reject-errors": "error",
+        //禁止省略parseInt的第二个参数
+        "radix": "error",
+        //禁止出现async函数中没有await的情况
+        "require-await": "error",
+        //
     }
 };
