@@ -10,6 +10,13 @@ module.exports = {
         'es6': true,
         'mocha': true,
     },
+    parserOptions: {
+        'ecmaFeatures': {
+            'experimentalObjectRestSpread': true,
+            'jsx': true
+        },
+        'sourceType': 'module'
+    },
     rules: {
         // 死循环报错
         'for-direction': 'error',
