@@ -1,6 +1,15 @@
 'use strict';
 
 module.exports = {
+    env: {
+        'browser': true,
+        'node': true,
+        'jest': true,
+        'jquery': true,
+        'mongo': true,
+        'es6': true,
+        'mocha': true,
+    },
     rules: {
         // 死循环报错
         'for-direction': 'error',
@@ -122,6 +131,26 @@ module.exports = {
         'radix': 'error',
         // 禁止出现async函数中没有await的情况
         'require-await': 'error',
+        // 禁止catch语句的参数与上层作用域变量同名
+        'no-catch-shadow': 'error',
+        // 禁止删除变量
+        'no-delete-var': 'error',
+        // 禁止使用与变量同名的标签
+        'no-label-var': 'error',
+        // 禁止局部变量覆盖外层作用域同名变量，除'resolve'、'reject'和'done'
+        'no-shadow': ['error', {
+           'allow': ['resolve','reject','done'] 
+        }],
+        // 禁止对关键字赋值
+        'no-shadow-restricted-names': 'error',
+        // 禁止使用未声明的变量，除特定环境中的全局变量
+        'no-undef': 'error',
+        // 禁止显示声明变量值为undefined
+        'no-undef-init': 'error',
+        // 禁止声明但未使用过的变量
+        'no-unused-vars': 'error',
+        // 禁止依赖于变量提升而在变量声明前使用它
+        'no-use-before-define': 'error',
         /* section4: 代码风格相关*/
         // off; 允许单行数组
         'array-bracket-newline': 0,

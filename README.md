@@ -4,6 +4,18 @@ My personal ESLint shareable config.
 # 安装
 `$ npm install --save-dev eslint eslint-config-nzcl`
 
+# 支持的环境
+```js
+env: {
+    'browser': true,
+    'node': true,
+    'jest': true,
+    'jquery': true,
+    'mongo': true,
+    'es6': true,
+}
+```
+
 # 使用
 尽管单独使用本规范配置不会有任何副作用  
 ```js
