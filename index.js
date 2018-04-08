@@ -51,15 +51,15 @@ module.exports = {
         // 禁止出现无效的正则声明
         'no-invalid-regexp': 'error',
         // 对除空格和tab以外的空白字符发出警告
-        'no-irregular-whitespace': 'warning',
+        'no-irregular-whitespace': 'warn',
         // 不得将Math、JSON等全局对象当作函数调用
         'no-obj-calls': 'error',
         // 禁止在正则中出现连续多个空格，应该使用'{n}'来指定空格的个数
         'no-regex-spaces': 'error',
         // 对稀疏数组发出警告，如'[1,2,,3,,4]'。这可能是开发者多写了逗号。
-        'no-sparse-arrays': 'warning',
+        'no-sparse-arrays': 'warn',
         // 对可能是错误的模板字符串发出警告。比如'${abc}'可能是误写。
-        'no-template-curly-in-string': 'warning',
+        'no-template-curly-in-string': 'warn',
         // 禁止在必要的换行时省略分号
         'no-unexpected-multiline': 'error',
         // 禁止在return等返回语句后出现不可达代码
@@ -71,7 +71,7 @@ module.exports = {
         */ 
         'no-unsafe-finally': 'error',
         // 对可能是错误的布尔表达式发出警告。比如'!(key in obj)'错写成'!key in obj'
-        'no-unsafe-negation': 'warning',
+        'no-unsafe-negation': 'warn',
         // 禁止直接与NaN进行比较，应该使用Number.isNaN()
         'use-isnan': 'error',
         // 禁止将typeof操作符返回的结果与未知的类型比较
@@ -81,19 +81,19 @@ module.exports = {
         // 禁止出现跨块级调用变量
         'block-scoped-var': 'error',
         // 对缺少大括号的语句发出警告
-        'curly': 'warning',
+        'curly': 'warn',
         // 禁止switch语句中缺少default分支
         'default-case': 'error',
         // 禁止使用==和!=
         'eqeqeq': 'error',
         // 对缺少if(obj.hasOwnProperty())判断的for...in循环发出警告
-        'guard-for-in': 'waring',
+        'guard-for-in': 'warn',
         // 禁止使用eval()
         'no-eval': 'error',
         // 禁止扩展原生类型
         'no-extend-native': 'error',
         // 对没有break的case语句发出警告
-        'no-fallthrough': 'warning',
+        'no-fallthrough': 'warn',
         // 禁止对原生全局变量赋值
         'no-global-assign': 'error',
         // 禁止使用隐式eval()
@@ -444,15 +444,15 @@ module.exports = {
         // 禁止在导入导出模块时出现无意义的重命名
         'no-useless-rename': 'error',
         // 对使用var的行为发出警告
-        'no-var': 'warning',
+        'no-var': 'warn',
         // 禁止出现对象字面量的属性简写写法
-        'object-shorthand': 'error',
+        'object-shorthand': ['error','never'],
         // 禁止对常量使用var或let赋值
         'prefer-const': 'error',
         // 对使用arguments的行为发出警告
-        'prefer-rest-params': 'warning',
+        'prefer-rest-params': 'warn',
         // 对使用Function.prototype.apply方法的行为发出警告
-        'prefer-spread': 'warning',
+        'prefer-spread': 'warn',
         // 禁止省略generator函数中的yield
         'require-yield': 'error',
         // 禁止在扩展运算符两边出现空格
