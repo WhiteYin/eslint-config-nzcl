@@ -20,9 +20,12 @@ module.exports = {
         // 禁止在比较表达式中出现赋值操作符
         'no-cond-assign': 'error',
         // 禁止除console.error和console.warn以外的console语句
-        'no-console': ['error', {
-            allow:['warn','error']
-        }],
+        'no-console': [
+            'error',
+            {
+                allow:['warn','error']
+            },
+        ],
         // 正则表达式中禁止使用控制字符
         'no-control-regex': 'error',
         // 禁止使用debugger语句
@@ -138,9 +141,12 @@ module.exports = {
         // 禁止使用与变量同名的标签
         'no-label-var': 'error',
         // 禁止局部变量覆盖外层作用域同名变量，除'resolve'、'reject'和'done'
-        'no-shadow': ['error', {
-           'allow': ['resolve','reject','done'] 
-        }],
+        'no-shadow': [
+            'error',
+            {
+               'allow': ['resolve','reject','done'] 
+            },
+        ],
         // 禁止对关键字赋值
         'no-shadow-restricted-names': 'error',
         // 禁止使用未声明的变量，除特定环境中的全局变量
