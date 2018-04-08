@@ -408,6 +408,58 @@ module.exports = {
         // error; 文件不能以 Unicode BOM 开头
         'unicode-bom': 2,
         // error; 要求正则表达式被包裹起来
-        'wrap-regex': 2
+        'wrap-regex': 2,
+        // 禁止省略箭头函数的箭头前后空格
+        'arrow-spacing': [
+            'error',
+            {
+                'before': true,
+                'after': true,
+            }
+        ],
+        // 禁止省略派生类中的super方法
+        'constructor-super': 'error',
+        // 禁止省略generator的星号前后空格
+        'generator-star-spacing': [
+            'error',
+            {
+                'before': true,
+                'after': true,
+            }
+        ],
+        // 禁止声明与已有类同名的变量并赋值
+        'no-class-assign': 'error',
+        // 禁止出现容易混淆箭头函数用途的场景
+        'no-confusing-arrow': 'error',
+        // 禁止修改const声明的常量
+        'no-const-assign': 'error',
+        // 禁止在一个类中声明多个同名变量
+        'no-dupe-class-members': 'error',
+        // 禁止重复导入同一模块
+        'no-duplicate-imports': 'error',
+        // 禁止将new和Symbol同时调用
+        'no-new-symbol': 'error',
+        // 禁止在super()调用前使用this或super
+        'no-this-before-super': 'error',
+        // 禁止在导入导出模块时出现无意义的重命名
+        'no-useless-rename': 'error',
+        // 对使用var的行为发出警告
+        'no-var': 'warning',
+        // 禁止出现对象字面量的属性简写写法
+        'object-shorthand': 'error',
+        // 禁止对常量使用var或let赋值
+        'prefer-const': 'error',
+        // 对使用arguments的行为发出警告
+        'prefer-rest-params': 'warning',
+        // 对使用Function.prototype.apply方法的行为发出警告
+        'prefer-spread': 'warning',
+        // 禁止省略generator函数中的yield
+        'require-yield': 'error',
+        // 禁止在扩展运算符两边出现空格
+        'rest-spread-spacing': ['error', 'never'],
+        // 禁止在创建Symbol变量时省略描述
+        'symbol-description': 'error',
+        // 禁止在模板字符串的花括号内出现空格
+        'template-curly-spacing': ['error', 'never'],
     }
 };
