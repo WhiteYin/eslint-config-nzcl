@@ -151,6 +151,18 @@ module.exports = {
         'no-unused-vars': 'error',
         // 禁止依赖于变量提升而在变量声明前使用它
         'no-use-before-define': 'error',
+        // 禁止在除顶层作用域外调用require()方法
+        'global-require': 'error',
+        // 禁止使用Buffer构造函数，使用Buffer.from方法代替
+        'no-buffer-constructor': 'error',
+        // 禁止对require调用new操作符
+        'no-new-require': 'error',
+        // 禁止对__dirname等直接使用字符串拼接。应该用path模块处理文件路径
+        'no-path-concat': 'error',
+        // 禁止在代码中对process.env赋值
+        'no-process-env': 'error',
+        // 禁止使用process.exit()，这是一个危险的方法。使用抛出错误代替
+        'no-process-exit': 'error',
         /* section4: 代码风格相关*/
         // off; 允许单行数组
         'array-bracket-newline': 0,
