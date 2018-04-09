@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-nzcl",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "nzcl社团eslint配置规范",
   "main": "index.js",
   "scripts": {

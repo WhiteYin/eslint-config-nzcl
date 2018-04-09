@@ -111,8 +111,8 @@ module.exports = {
         'no-iterator': 'error',
         // 禁止在循环中出现函数声明
         'no-loop-func': 'error',
-        // 禁止出现重复使用的数字，应该用一个常量代替
-        'no-magic-numbers': 'error',
+        // 对重复使用的数字发出警告
+        'no-magic-numbers': 'warn',
         // 禁止出现换行符'\'
         'no-multi-str': 'error',
         // 禁止出现不使用变量接收new操作符返回值的情况
